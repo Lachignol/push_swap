@@ -29,7 +29,7 @@ Le programme utilise les instructions suivantes pour manipuler les piles A et B 
 L'algorithme utilisé dans ce projet se divise en deux étapes principales :
 
 1. **Pré-tri dans la pile B** :
-   - Les éléments sont classés dans B selon leur valeur relative (quartiles, médiane).
+   - Les éléments sont classés dans B selon leur valeur relative (médiane).
    - Les rotations et push sont utilisés pour organiser les éléments dans un ordre décroissant approximatif.
    - La pile A est réduite à trois éléments avant la seconde étape.
 
@@ -42,7 +42,12 @@ L'algorithme utilisé dans ce projet se divise en deux étapes principales :
 
 ## Installation et Compilation
 Clonez le projet depuis GitHub et compilez-le avec `make` :
-git clone <URL_du_projet> cd push_swap make
+
+git clone <URL_du_projet> 
+
+cd push_swap 
+
+make
 
 ---
 
@@ -50,4 +55,9 @@ git clone <URL_du_projet> cd push_swap make
 Exécutez le programme avec une liste d'entiers :
 ./push_swap <liste_d_entiers>
 Exemple :
+```
 ./push_swap 4 67 -3 87 23
+```
+```
+./push_swap "4 67 -3 87 23"
+```
